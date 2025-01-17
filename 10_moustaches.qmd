@@ -1,0 +1,26 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Les boîtes à moustaches {.backgroundTitre}
+
+## Les boîtes à moustaches {.backgroundTitre}
+
+Les boîtes à moustache avec **geom_boxplot()**
+
+-   **Objectif** : représenter la répartition d'une variable
+    quantitative autour des quartiles de sa distribution
+
+-   Éventuellement, représenter cette répartition selon les modalités
+    d'une variable qualitative : il y a alors donc deux variables à
+    renseigner en paramètres 
+
+    -   x : variable qualitative de croisement
+
+    -   y : variable quantitative à croiser
+
+## Les boîtes à moustaches {.backgroundTitre}
+
+![](img/clipboard-moustache1.png){fig-align="center"}

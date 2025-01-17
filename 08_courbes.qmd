@@ -1,0 +1,41 @@
+# Les courbes {.backgroundTitre}
+
+## Les courbes {.backgroundTitre}
+
+Les courbes avec **geom_line()** :
+
+-   **Objectif** : réaliser une courbe, en reliant les points d'un nuage de points par des segments, notamment à partir d'une variable temporelle en abscisse
+
+-   Le format de la table en entrée est particulier, il ne doit y avoir qu'une valeur d'ordonnées par valeur d'abscisse
+
+![](img/clipboard-courbe1.png){fig-align="center"}
+
+## Les courbes {.backgroundTitre}
+
+On peut croiser les données avec une variable qualitative et obtenir ainsi autant de courbes que de modalités de la variable.
+
+*Exemple :* réaliser sur un même graphique les courbes d'évolution de la part de l'agriculture dans le PIB pour quatre pays de l'Union Européenne
+
+![](img/clipboard-courbe2.png){fig-align="center"}
+
+## Les courbes {.backgroundTitre}
+
+Il faut créer une variable qualitative correspondant au pays
+
+-   → fonction *pivot_longer()*
+
+`evol_partagri_pib_UE2 <- evol_partagri_pib_UE %>%`
+
+`pivot_longer(Allemagne:RU,`
+
+`names_to = "PAYS",`
+
+`values_to = "partAgri_PIB")`
+
+![](img/clipboard-courbe3.png){fig-align="center"}
+
+## Les courbes {.backgroundTitre}
+
+![](img/clipboard-courbe4.png){fig-align="center"}
+
+**EXERCICE 4**

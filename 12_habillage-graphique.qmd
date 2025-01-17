@@ -1,0 +1,85 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Habillage du graphique {.backgroundTitre}
+
+## Habillage du graphique {.backgroundTitre}
+
+Habillage du graphique :
+
+-   Ajout d'annotation
+
+-   Gestion des axes
+
+-   Modification du thème
+
+-   Ajout de titre, sous-titre, source, libellés de légende...
+
+## Habillage du graphique {.backgroundTitre}
+
+-   → Ajouter un segment de droite en précisant les coordonnées des
+    extrémités : *geom = ''segment''*
+
+![](img/clipboard-habillage1.png){fig-align="center"}
+
+## Habillage du graphique {.backgroundTitre}
+
+-   → Ajouter une figure rectangulaire en précisant les coordonnées des
+    points en diagonale : *geom = ''rect''*
+
+![](img/clipboard-habillage2.png){fig-align="center"}
+
+## Habillage du graphique {.backgroundTitre}
+
+On modifie l'échelle des axes avec les fonctions préfixées
+*scale_XXX()* et leurs arguments *breaks* :
+
+-   *scale_x_discrete()* : gérer l'axe des x d'une variable qualitative
+
+-   *`scale_x_continuous()`* : gérer l'axe des x d'une variable continue
+
+-   *scale_x_manual()* : gérer manuellement l'axe des x
+
+-   *scale_fill_manual()* : gérer manuellement la variable de croisement
+    de type fill
+
+-   *scale_colour_manual()* : gérer manuellement la variable de
+    croisement de type colour
+
+## Habillage du graphique {.backgroundTitre}
+
+-   On modifie l'apparence générale du graphique à l'aide de la fonction
+    **theme(**). De nombreux paramètres à consulter dans l'aide de la
+    fonction permettent de modifier chaque élément d'un graphique.
+
+-   Par exemple, pour supprimer le fond gris d'un graphique et
+    transformer les lignes des axes en lignes grises d'épaisseur 0,2, il
+    faut ajouter le bloc suivant au code du graphique :
+
+![](img/clipboard-habillage3.png){fig-align="center"}
+
+## Habillage du graphique {.backgroundTitre}
+
+-   Il existe des thèmes prédéfinis que l'on peut ajouter à un
+    graphique 
+
+![](img/clipboard-habillage4.png){fig-align="center"}
+
+## Habillage du graphique {.backgroundTitre}
+
+On peut modifier l'ensemble des libellés avec la fonction **labs()**
+
+-   *title* = titre du graphique
+
+-   *subtitle* = sous-titre
+
+-   *x,y* = noms des axes
+
+-   *fill, colour, size, alpha* = intitulé de la légende
+
+-   *caption* = source de données
+
+![](img/clipboard-habillage5.png){fig-align="center"}

@@ -14,7 +14,7 @@ toc: true
 toc-title: Sommaire
 toc-depth: 1
 toc-float: true
-# multiplex: true
+#multiplex: true
 execute:
   echo: false
   warning: false
@@ -83,3 +83,15 @@ RStudio Workbench.
 {{< include 06_histogrammes.qmd >}}
 
 {{< include 07_nuages.qmd >}}
+
+{{< include 08_courbes.qmd >}}
+
+{{< include 09_camenberts.qmd >}}
+
+{{< include 10_moustaches.qmd >}}
+
+{{< include 11_libelles.qmd >}}
+
+{{< include 12_habillage-graphique.qmd >}}
+
+{{< include 13_sauvegarde.qmd >}}

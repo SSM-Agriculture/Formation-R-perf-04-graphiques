@@ -1,0 +1,23 @@
+# Sauvegarde du graphique {.backgroundTitre}
+
+## Sauvegarde du graphique {.backgroundTitre}
+
+-   La sauvegarde du graphique peut se faire avec le bouton « export » de l'onglet « Plots »
+
+![](img/clipboard-sauvegarde1.png){fig-align="center"}
+
+-   On peut également sauvegarder un graphique avec la fonction *ggsave()*
+
+    -   possibilité d'exporter au format pdf, svg, png, etc. → il suffit de l'indiquer dans l'extension du nom de fichier en sortie
+
+    -   par défaut, la fonction exporte le dernier graphique possibilité de choisir la taille et la résolution du graphique exporté
+
+# Pour aller plus loin… {.backgroundTitre}
+
+## Liens {.backgroundTitre}
+
+-   <https://www.r-graph-gallery.com/>
+
+-   Le package *{esquisse}* pour construire une ébauche de graphique et générer le code
+
+![](img/clipboard-sauvegarde2.png){fig-align="center"}
