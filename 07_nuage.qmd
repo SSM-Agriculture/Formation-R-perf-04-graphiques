@@ -1,0 +1,60 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Les nuages de points {.backgroundTitre}
+
+## Les nuages de points {.backgroundTitre}
+
+Les nuages de points avec **geom_point()** :
+
+-   Objectif : croiser deux variables dans un graphique de coordonnées
+    cartésiennes
+
+-   On peut croiser les observations avec :
+
+    -   une variable qualitative en utilisant davantage l'argument
+        *colour* ou *shape* de la fonction *aes()* (ou *size* dans une
+        moindre mesure)
+
+    -   une variable quantitative en utilisant l'argument *size* de la
+        fonction *aes()*
+
+## Les nuages de points {.backgroundTitre}
+
+On peut aussi créer un graphique pour chaque modalité de la variable de
+croisement avec la fonction *facet_wrap()*
+
+![](img/clipboard-nuage1.png){fig-align="center"}
+
+## Les nuages de points {.backgroundTitre}
+
+On peut ajouter une droite de régression linéaire sur un graphe
+construit comme un nuage de points en utilisant la fonction
+*geom_smooth(method = "lm")*.
+
+-   **Attention !** C'est une régression sans pondération
+
+![](img/clipboard-nuage2.png){fig-align="center"}
+
+## Les nuages de points {.backgroundTitre}
+
+Pour ajouter une droite de régression linéaire qui tient compte des
+pondérations, il faut :
+
+-   Calculer les coefficients de régression par ailleurs
+
+![](img/clipboard-nuage3.png){fig-align="center"}
+
+-   Récupérer ces coefficients
+
+![](img/clipboard-nuage4.png){fig-align="center"}
+
+-   Ajouter manuellement une droite sur le graphique avec les
+    coordonnées calculés précédemment
+
+![](img/clipboard-nuage5.png){fig-align="center"}
+
+**EXERCICE 3**

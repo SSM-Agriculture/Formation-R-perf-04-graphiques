@@ -79,3 +79,7 @@ RStudio Workbench.
 {{< include 04_croisement.qmd >}}
 
 {{< include 05_barres.qmd >}}
+
+{{< include 06_histogrammes.qmd >}}
+
+{{< include 07_nuages.qmd >}}
