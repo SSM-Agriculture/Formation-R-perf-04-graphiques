@@ -1,0 +1,45 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Les différentes géométries de graphiques {.backgroundTitre}
+
+## Les différentes géométries de graphiques {.backgroundTitre}
+
+Déclaration de la géométrie du graphique avec les fonctions de la forme
+**geom_XXX()**.
+
+Les géométries les plus courantes sont :
+
+-   `geom_bar() et geom_col()` → graphiques en barres (équivalent de
+    barplot())
+
+-   `geom_histogram()` → histogramme (équivalent de hist())
+
+-   `geom_point()` → nuage de points (équivalent de plot())
+
+-   `geom_line()` → points reliés par un segment
+
+-   `geom_boxplot()` → boxplot (équivalent de boxplot())
+
+## Les différentes géométries de graphiques {.backgroundTitre}
+
+![](img/clipboard-exemple1.png){fig-align="center"}
+
+## Les différentes géométries de graphiques {.backgroundTitre}
+
+![](img/clipboard-exemple2.png){fig-align="center"}
+
+## Les différentes géométries de graphiques {.backgroundTitre}
+
+![](img/clipboard-exemple3.png){fig-align="center"}
+
+## Les différentes géométries de graphiques {.backgroundTitre}
+
+![](img/clipboard-exemple4.png){fig-align="center"}
+
+## Les différentes géométries de graphiques {.backgroundTitre}
+
+![](img/clipboard-exemple5.png){fig-align="center"}

@@ -1,0 +1,31 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Croisement avec une autre variable {.backgroundTitre}
+
+## Croisement avec une autre variable {.backgroundTitre}
+
+On peut **distinguer les observations appartenant à des classes
+différentes** au sein d'une distribution. Pour cela, il faut renseigner,
+selon le cas, les arguments suivants dans la fonction *aes()* :
+
+-   **fill** : pour une différenciation par remplissage
+
+-   **colour** : pour une différenciation par couleur de bordure
+
+-   **shape** : pour une différenciation par forme
+
+-   **size** : pour une différenciation par taille
+
+-   **alpha** : pour une différenciation par transparence
+
+-   **linetype** : type de lignes (continue, pointillées…)
+
+-   **linewidth** : taill des lignes
+
+## Croisement avec une autre variable {.backgroundTitre}
+
+![](img/clipboard-croisement1.png){fig-align="center"}

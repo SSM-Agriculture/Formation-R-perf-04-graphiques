@@ -1,0 +1,49 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# Initialisation d'un graphique {.backgroundTitre}
+
+## Initialisation d'un graphique {.backgroundTitre}
+
+Un graphique est composé:
+
+-   De paramètres esthétiques : les variables à représenter =\> *aes()*
+
+-   D'une géométrie =\> *geom\_*
+
+-   *D'éléments d'échelle =\> facet\_*
+
+-   De système de coordonnées =\> *coord\_\**
+
+-   D'éléments d'habillage du graphique (apparence, titre, ajout de
+    texte, etc.) =\> *theme()*
+
+Un graphique s'initialise avec la fonction **ggplot(**) puis chaque
+élément est ajouté aux autres avec un +
+
+## Initialisation d'un graphique {.backgroundTitre}
+
+![](img/clipboard-init1.png){fig-align="center"}
+
+## Initialisation d'un graphique {.backgroundTitre}
+
+Initialisation du graphique avec la fonction **ggplot()**.
+
+On déclare :
+
+-   *data* : la table contenant les données à représenter
+
+-   *mapping* : éventuellement, la ou les variables à représenter
+    L'argument mapping requiert l'utilisation de la fonction *aes()*
+    (pour aesthetic mappings). Les variables à représenter sont
+    indiquées dans cette fonction par les paramètres x et y.
+
+⇒ ce sont les bases du graphique, sur lesquelles on va afficher ensuite
+les données
+
+## Initialisation d'un graphique {.backgroundTitre}
+
+![](img/clipboard-init2.png){fig-align="center"}

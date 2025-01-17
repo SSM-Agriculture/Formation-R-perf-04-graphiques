@@ -1,0 +1,45 @@
+# Les diagrammes en barres {.backgroundTitre}
+
+## Les diagrammes en barres {.backgroundTitre}
+
+Les diagrammes en barres avec geom_bar() :
+
+-   **Objectif** : compter les occurrences d'une modalité d'une variable qualitative (ou rendue qualitative par la création de classes)
+
+On peut construire un diagramme en barres à partir :
+
+-   De données individuelles
+
+![](img/clipboard-barre1.png){fig-align="center"}
+
+-   De données individuelles pondérées : argument weight de la fonction *aes()*
+
+![](img/clipboard-barre2.png){fig-align="center"}
+
+## Les diagrammes en barres {.backgroundTitre}
+
+-   De données agrégées : argument *stat = "identity"* de la fonction **geom_bar()**. Cet argument précise que la hauteur des barres n'est pas obtenue par comptage mais qu'elle est identique à la variable renseignée dans l'argument y de la fonction *aes()*
+
+![](img/clipboard-barre3.png){fig-align="center"}
+
+## Les diagrammes en barres {.backgroundTitre}
+
+On peut croiser les données avec une seconde variable en renseignant l'argument *fill* dans la fonction *aes()*.
+
+Trois dispositions sont alors possibles pour ces données, à choisir dans l'argument *position* de la fonction *geom_bar(*) :
+
+-   *position = "stack"* : par défaut, empilées en nombre
+
+![](img/clipboard-barre5.png){fig-align="center"}
+
+## Les diagrammes en barres {.backgroundTitre}
+
+-   *position = "dodge"* : placées côte à côte en nombre
+
+![](img/clipboard-barre5.png){fig-align="center"}
+
+-   *position = "fill"* : empilées en fréquence (total de chaque barre=1)
+
+![](img/clipboard-barre6.png){fig-align="center"}
+
+**EXERCICE 1**
