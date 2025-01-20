@@ -28,7 +28,7 @@ editor:
 ## Sommaire
 
 |                                              |                              |
-|---------------------------------------|---------------------------------|
+|----------------------------------------------|------------------------------|
 | 1 - Le package ggplot2                       | 8 - Les courbes              |
 | 2 - Initialisation d'un graphique            | 9 - Les camemberts           |
 | 3 - Les différentes géométries de graphiques | 10 - Les boîtes à moustaches |

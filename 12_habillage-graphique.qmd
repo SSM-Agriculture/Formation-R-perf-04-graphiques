@@ -83,3 +83,4 @@ On peut modifier l'ensemble des libellés avec la fonction **labs()**
 -   *caption* = source de données
 
 ![](img/clipboard-habillage5.png){fig-align="center"}
+EXERCICE 7
