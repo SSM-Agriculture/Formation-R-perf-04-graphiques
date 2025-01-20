@@ -10,10 +10,10 @@ slide-tone: false # for blind readers
 chalkboard: false # press the B key to toggle chalkboard
 transition: slide
 fig-cap-location: bottom
-toc: true
-toc-title: Sommaire
-toc-depth: 1
-toc-float: true
+# toc: true
+# toc-title: Sommaire
+# toc-depth: 1
+# toc-float: true
 #multiplex: true
 execute:
   echo: false
@@ -24,6 +24,18 @@ editor:
   markdown: 
     wrap: 72
 ---
+
+## Sommaire
+
+|                                              |                              |
+|---------------------------------------|---------------------------------|
+| 1 - Le package ggplot2                       | 8 - Les courbes              |
+| 2 - Initialisation d'un graphique            | 9 - Les camemberts           |
+| 3 - Les différentes géométries de graphiques | 10 - Les boîtes à moustaches |
+| 4 - Croisement avec une autre variable       | 11 - Ajout de libellés       |
+| 5 - Les diagrammes en barres                 | 12 - Habillage du graphique  |
+| 6 - Les histogrammes                         | 13 - Sauvegarde du graphique |
+| 7 - Les nuages de points                     | 14 - Liens                   |
 
 ## Avant-propos
 
