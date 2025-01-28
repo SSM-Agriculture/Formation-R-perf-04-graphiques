@@ -75,7 +75,7 @@ Pour information, Les Modules de la formation R-perfectionnement sont:
 
 -   07 - Module Initiation à l'écriture d'applications Shiny
 
-Ils sont orientés pour être utile aux agents du SSM MASA et se
+Ils sont orientés pour être utiles aux agents du SSM MASA et se
 concentrent sur une utilisation de R via
 [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à
 disposition des agents sur la plateforme interne Cerise basée sur
