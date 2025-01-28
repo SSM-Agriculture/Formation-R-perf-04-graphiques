@@ -1,6 +1,6 @@
 # Ajout de libellés {.backgroundTitre}
 
-## Ajout de libellés {.backgroundTitre}
+## Ajout de libellés
 
 La fonction **geom_text()** permet d'ajouter un libellé sur les points souhaités d'un graphique
 

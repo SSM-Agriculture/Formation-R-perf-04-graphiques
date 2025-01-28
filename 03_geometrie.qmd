@@ -6,7 +6,7 @@ editor:
 
 # Les différentes géométries de graphiques {.backgroundTitre}
 
-## Les différentes géométries de graphiques {.backgroundTitre}
+## Les différentes géométries de graphiques
 
 Déclaration de la géométrie du graphique avec les fonctions de la forme
 **geom_XXX()**.
@@ -24,22 +24,22 @@ Les géométries les plus courantes sont :
 
 -   `geom_boxplot()` → boxplot (équivalent de boxplot())
 
-## Les différentes géométries de graphiques {.backgroundTitre}
+## Les différentes géométries de graphiques
 
 ![](img/clipboard-exemple1.png){fig-align="center"}
 
-## Les différentes géométries de graphiques {.backgroundTitre}
+## Les différentes géométries de graphiques
 
 ![](img/clipboard-exemple2.png){fig-align="center"}
 
-## Les différentes géométries de graphiques {.backgroundTitre}
+## Les différentes géométries de graphiques
 
 ![](img/clipboard-exemple3.png){fig-align="center"}
 
-## Les différentes géométries de graphiques {.backgroundTitre}
+## Les différentes géométries de graphiques
 
 ![](img/clipboard-exemple4.png){fig-align="center"}
 
-## Les différentes géométries de graphiques {.backgroundTitre}
+## Les différentes géométries de graphiques
 
 ![](img/clipboard-exemple5.png){fig-align="center"}

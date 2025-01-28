@@ -1,6 +1,6 @@
 # Les diagrammes en barres {.backgroundTitre}
 
-## Les diagrammes en barres {.backgroundTitre}
+## Les diagrammes en barres
 
 Les diagrammes en barres avec geom_bar() :
 
@@ -16,13 +16,13 @@ On peut construire un diagramme en barres à partir :
 
 ![](img/clipboard-barre2.png){fig-align="center"}
 
-## Les diagrammes en barres {.backgroundTitre}
+## Les diagrammes en barres
 
 -   De données agrégées : argument *stat = "identity"* de la fonction **geom_bar()**. Cet argument précise que la hauteur des barres n'est pas obtenue par comptage mais qu'elle est identique à la variable renseignée dans l'argument y de la fonction *aes()*
 
 ![](img/clipboard-barre3.png){fig-align="center"}
 
-## Les diagrammes en barres {.backgroundTitre}
+## Les diagrammes en barres
 
 On peut croiser les données avec une seconde variable en renseignant l'argument *fill* dans la fonction *aes()*.
 
@@ -32,7 +32,7 @@ Trois dispositions sont alors possibles pour ces données, à choisir dans l'arg
 
 ![](img/clipboard-barre5.png){fig-align="center"}
 
-## Les diagrammes en barres {.backgroundTitre}
+## Les diagrammes en barres
 
 -   *position = "dodge"* : placées côte à côte en nombre
 

@@ -1,6 +1,6 @@
 # Les camemberts {.backgroundTitre}
 
-## Les camemberts {.backgroundTitre}
+## Les camemberts
 
 Les camemberts aec **geom_bar()** + **coord_polar()**
 
@@ -8,6 +8,6 @@ Les camemberts aec **geom_bar()** + **coord_polar()**
 
 -   Il n'existe pas de fonction dans le package *ggplot2* permettant de construire directement un camembert. Pour ce faire, il faut utiliser la fonction *geom_bar()* et changer par ailleurs le système de coordonnées en coordonnées polaires
 
-## Les camemberts {.backgroundTitre}
+## Les camemberts
 
 ![](img/clipboard-camenbert1.png){fig-align="center"}

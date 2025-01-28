@@ -6,7 +6,7 @@ editor:
 
 # Initialisation d'un graphique {.backgroundTitre}
 
-## Initialisation d'un graphique {.backgroundTitre}
+## Initialisation d'un graphique
 
 Un graphique est composé:
 
@@ -24,11 +24,11 @@ Un graphique est composé:
 Un graphique s'initialise avec la fonction **ggplot(**) puis chaque
 élément est ajouté aux autres avec un +
 
-## Initialisation d'un graphique {.backgroundTitre}
+## Initialisation d'un graphique
 
 ![](img/clipboard-init1.png){fig-align="center"}
 
-## Initialisation d'un graphique {.backgroundTitre}
+## Initialisation d'un graphique
 
 Initialisation du graphique avec la fonction **ggplot()**.
 
@@ -44,6 +44,6 @@ On déclare :
 ⇒ ce sont les bases du graphique, sur lesquelles on va afficher ensuite
 les données
 
-## Initialisation d'un graphique {.backgroundTitre}
+## Initialisation d'un graphique
 
 ![](img/clipboard-init2.png){fig-align="center"}

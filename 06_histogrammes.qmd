@@ -1,6 +1,6 @@
 # Les histogrammes {.backgroundTitre}
 
-## Les histogrammes {.backgroundTitre}
+## Les histogrammes
 
 Les histogrammes avec **geom_histogram()** :
 
@@ -12,17 +12,17 @@ La fonction *geom_histogram()* possède deux arguments pour gérer la largeur de
 
 -   *binwidth :* fixe la largeur des barres dans l'unité de la variable représentée
 
-## Les histogrammes {.backgroundTitre}
+## Les histogrammes
 
 ![](img/clipboard-histo1.png){fig-align="center"}
 
-## Les histogrammes {.backgroundTitre}
+## Les histogrammes
 
 On peut croiser les données avec une variable qualitative en renseignant l'argument *fill* dans la fonction *aes()*.
 
 ![](img/clipboard-histo2.png){fig-align="center"}
 
-## Les histogrammes {.backgroundTitre}
+## Les histogrammes
 
 La fonction *geom_freqpoly()* permet de construire un polygone de fréquence pour chaque classe de la variable de croisement
 

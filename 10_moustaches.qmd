@@ -6,7 +6,7 @@ editor:
 
 # Les boîtes à moustaches {.backgroundTitre}
 
-## Les boîtes à moustaches {.backgroundTitre}
+## Les boîtes à moustaches
 
 Les boîtes à moustache avec **geom_boxplot()**
 
@@ -21,6 +21,6 @@ Les boîtes à moustache avec **geom_boxplot()**
 
     -   y : variable quantitative à croiser
 
-## Les boîtes à moustaches {.backgroundTitre}
+## Les boîtes à moustaches
 
 ![](img/clipboard-moustache1.png){fig-align="center"}

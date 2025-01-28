@@ -6,7 +6,7 @@ editor:
 
 # Les nuages de points {.backgroundTitre}
 
-## Les nuages de points {.backgroundTitre}
+## Les nuages de points
 
 Les nuages de points avec **geom_point()** :
 
@@ -22,14 +22,14 @@ Les nuages de points avec **geom_point()** :
     -   une variable quantitative en utilisant l'argument *size* de la
         fonction *aes()*
 
-## Les nuages de points {.backgroundTitre}
+## Les nuages de points
 
 On peut aussi créer un graphique pour chaque modalité de la variable de
 croisement avec la fonction *facet_wrap()*
 
 ![](img/clipboard-nuage1.png){fig-align="center"}
 
-## Les nuages de points {.backgroundTitre}
+## Les nuages de points
 
 On peut ajouter une droite de régression linéaire sur un graphe
 construit comme un nuage de points en utilisant la fonction
@@ -39,7 +39,7 @@ construit comme un nuage de points en utilisant la fonction
 
 ![](img/clipboard-nuage2.png){fig-align="center"}
 
-## Les nuages de points {.backgroundTitre}
+## Les nuages de points
 
 Pour ajouter une droite de régression linéaire qui tient compte des
 pondérations, il faut :

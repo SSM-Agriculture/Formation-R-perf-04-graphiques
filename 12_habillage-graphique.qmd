@@ -6,7 +6,7 @@ editor:
 
 # Habillage du graphique {.backgroundTitre}
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 Habillage du graphique :
 
@@ -18,21 +18,21 @@ Habillage du graphique :
 
 -   Ajout de titre, sous-titre, source, libellés de légende...
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 -   → Ajouter un segment de droite en précisant les coordonnées des
     extrémités : *geom = ''segment''*
 
 ![](img/clipboard-habillage1.png){fig-align="center"}
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 -   → Ajouter une figure rectangulaire en précisant les coordonnées des
     points en diagonale : *geom = ''rect''*
 
 ![](img/clipboard-habillage2.png){fig-align="center"}
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 On modifie l'échelle des axes avec les fonctions préfixées
 *scale_XXX()* et leurs arguments *breaks* :
@@ -49,7 +49,7 @@ On modifie l'échelle des axes avec les fonctions préfixées
 -   *scale_colour_manual()* : gérer manuellement la variable de
     croisement de type colour
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 -   On modifie l'apparence générale du graphique à l'aide de la fonction
     **theme(**). De nombreux paramètres à consulter dans l'aide de la
@@ -61,14 +61,14 @@ On modifie l'échelle des axes avec les fonctions préfixées
 
 ![](img/clipboard-habillage3.png){fig-align="center"}
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 -   Il existe des thèmes prédéfinis que l'on peut ajouter à un
     graphique 
 
 ![](img/clipboard-habillage4.png){fig-align="center"}
 
-## Habillage du graphique {.backgroundTitre}
+## Habillage du graphique
 
 On peut modifier l'ensemble des libellés avec la fonction **labs()**
 

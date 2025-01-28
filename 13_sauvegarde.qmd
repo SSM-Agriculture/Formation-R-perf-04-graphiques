@@ -1,6 +1,6 @@
 # Sauvegarde du graphique {.backgroundTitre}
 
-## Sauvegarde du graphique {.backgroundTitre}
+## Sauvegarde du graphique
 
 -   La sauvegarde du graphique peut se faire avec le bouton « export » de l'onglet « Plots »
 
@@ -14,7 +14,7 @@
 
 # Pour aller plus loin… {.backgroundTitre}
 
-## Liens {.backgroundTitre}
+## Liens
 
 -   <https://www.r-graph-gallery.com/>
 

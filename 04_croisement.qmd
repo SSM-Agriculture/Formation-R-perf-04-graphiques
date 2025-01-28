@@ -6,7 +6,7 @@ editor:
 
 # Croisement avec une autre variable {.backgroundTitre}
 
-## Croisement avec une autre variable {.backgroundTitre}
+## Croisement avec une autre variable
 
 On peut **distinguer les observations appartenant à des classes
 différentes** au sein d'une distribution. Pour cela, il faut renseigner,
@@ -26,6 +26,6 @@ selon le cas, les arguments suivants dans la fonction *aes()* :
 
 -   **linewidth** : taill des lignes
 
-## Croisement avec une autre variable {.backgroundTitre}
+## Croisement avec une autre variable
 
 ![](img/clipboard-croisement1.png){fig-align="center"}

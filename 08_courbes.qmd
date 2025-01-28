@@ -1,6 +1,6 @@
 # Les courbes {.backgroundTitre}
 
-## Les courbes {.backgroundTitre}
+## Les courbes
 
 Les courbes avec **geom_line()** :
 
@@ -10,7 +10,7 @@ Les courbes avec **geom_line()** :
 
 ![](img/clipboard-courbe1.png){fig-align="center"}
 
-## Les courbes {.backgroundTitre}
+## Les courbes
 
 On peut croiser les données avec une variable qualitative et obtenir ainsi autant de courbes que de modalités de la variable.
 
@@ -18,7 +18,7 @@ On peut croiser les données avec une variable qualitative et obtenir ainsi auta
 
 ![](img/clipboard-courbe2.png){fig-align="center"}
 
-## Les courbes {.backgroundTitre}
+## Les courbes
 
 Il faut créer une variable qualitative correspondant au pays
 
@@ -34,7 +34,7 @@ Il faut créer une variable qualitative correspondant au pays
 
 ![](img/clipboard-courbe3.png){fig-align="center"}
 
-## Les courbes {.backgroundTitre}
+## Les courbes
 
 ![](img/clipboard-courbe4.png){fig-align="center"}
 

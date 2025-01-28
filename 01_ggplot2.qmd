@@ -1,6 +1,6 @@
 # Le package ggplot2 {.backgroundTitre}
 
-## Le package ggplot2 {.backgroundTitre}
+## Le package ggplot2
 
 Le package ggplot2 :
 
