@@ -24,22 +24,22 @@ Les géométries les plus courantes sont :
 
 -   `geom_boxplot()` → boxplot (équivalent de boxplot())
 
-## Les différentes géométries de graphiques
+## Les diagrammes en barre
 
 ![](img/clipboard-exemple1.png){fig-align="center"}
 
-## Les différentes géométries de graphiques
+## Les histogrammes
 
 ![](img/clipboard-exemple2.png){fig-align="center"}
 
-## Les différentes géométries de graphiques
+## Les nuages de points
 
 ![](img/clipboard-exemple3.png){fig-align="center"}
 
-## Les différentes géométries de graphiques
+## Les segments
 
 ![](img/clipboard-exemple4.png){fig-align="center"}
 
-## Les différentes géométries de graphiques
+## Les boxplots
 
 ![](img/clipboard-exemple5.png){fig-align="center"}
