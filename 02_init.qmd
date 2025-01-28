@@ -8,25 +8,27 @@ editor:
 
 ## Initialisation d'un graphique
 
+::: columns
+::: {.column width="40%"}
+![](img/clipboard-init1.png){fig-align="center"}
+:::
+
+::: {.column width="60%"}
 Un graphique est composé:
 
--   De paramètres esthétiques : les variables à représenter =\> *aes()*
+- des données
+- des paramètres esthétiques : les variables à représenter ⇒ `aes()`
+- une géométrie ⇒ `geom_*`
+- des vignettes éventuelles ⇒ `facet_*`
+- des éléments d'échelle ⇒ `scale_*`
+- un système de coordonnées ⇒ `coord_*`
+- des éléments d'habillage du graphique (apparence, titre, ajout de texte, etc.) ⇒ `theme()`
+:::
+:::
 
--   D'une géométrie =\> *geom\_*
-
--   *D'éléments d'échelle =\> facet\_*
-
--   De système de coordonnées =\> *coord\_\**
-
--   D'éléments d'habillage du graphique (apparence, titre, ajout de
-    texte, etc.) =\> *theme()*
-
-Un graphique s'initialise avec la fonction **ggplot(**) puis chaque
+Un graphique s'initialise avec la fonction `ggplot()` puis chaque
 élément est ajouté aux autres avec un +
 
-## Initialisation d'un graphique
-
-![](img/clipboard-init1.png){fig-align="center"}
 
 ## Initialisation d'un graphique
 
@@ -34,16 +36,22 @@ Initialisation du graphique avec la fonction **ggplot()**.
 
 On déclare :
 
--   *data* : la table contenant les données à représenter
+-   `data` : la table contenant les données à représenter
 
--   *mapping* : éventuellement, la ou les variables à représenter
+-   `mapping` : éventuellement, la ou les variables à représenter
     L'argument mapping requiert l'utilisation de la fonction *aes()*
     (pour aesthetic mappings). Les variables à représenter sont
     indiquées dans cette fonction par les paramètres x et y.
+
+<br>
 
 ⇒ ce sont les bases du graphique, sur lesquelles on va afficher ensuite
 les données
 
 ## Initialisation d'un graphique
+
+Initialisation d'un graphique, les axes x et y sont créés mais **aucune géométrie** n'est utilisée pour représenter les données.  
+
+<br>
 
 ![](img/clipboard-init2.png){fig-align="center"}
