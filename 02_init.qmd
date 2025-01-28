@@ -55,3 +55,35 @@ Initialisation d'un graphique, les axes x et y sont créés mais **aucune géom�
 <br>
 
 ![](img/clipboard-init2.png){fig-align="center"}
+
+## Utilisation de la fonction `aes()`
+
+**L'appel de la fonction `aes()` peut se faire :**  
+
+- Dans l'initialisation du graphique avec `ggplot()`  
+
+```{.r}
+ggplot(data = diamonds, mapping = aes(x = clarity, y = price)) +
+  geom_bar(stat = "identity")
+```
+
+- Dans la fonction de géométrie => utile si on souhaite superposer plusieurs 
+géométries avec des paramètres esthétiques différents.
+
+```{.r}
+ggplot(data = diamonds) +
+  geom_bar(aes(x = clarity, y = price),
+           stat = "identity")
+```
+
+- En dehors des autres fonctions.
+
+```{.r}
+ggplot(data = diamonds) +
+  aes(x = clarity, y = price) +
+  geom_bar(stat = "identity")
+```
+
+**Les 3 écritures sont équivalentes.**  
+
+**Par défaut, chaque fonction de géométrie hérite des paramètres esthétiques précédents.** 
