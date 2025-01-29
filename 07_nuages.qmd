@@ -8,19 +8,18 @@ editor:
 
 ## Les nuages de points
 
-Les nuages de points avec **geom_point()** :
+Les nuages de points avec `geom_point()` :
 
--   Objectif : croiser deux variables dans un graphique de coordonnées
+-   **Objectif** : croiser deux variables dans un graphique de coordonnées
     cartésiennes
 
 -   On peut croiser les observations avec :
 
-    -   une variable qualitative en utilisant davantage l'argument
-        *colour* ou *shape* de la fonction *aes()* (ou *size* dans une
-        moindre mesure)
+    -   **une variable qualitative** en utilisant davantage l'argument
+        *colour* ou *shape* de la fonction `aes()` (ou *fill* pour [certaines formes de points](https://r-graphics.org/recipe-scatter-shapes#RECIPE-SCATTER-SHAPES))
 
-    -   une variable quantitative en utilisant l'argument *size* de la
-        fonction *aes()*
+    -   **une variable quantitative** en utilisant l'argument *size* de la
+        fonction `aes()`
 
 ## Les nuages de points
 
@@ -56,5 +55,3 @@ pondérations, il faut :
     coordonnées calculés précédemment
 
 ![](img/clipboard-nuage5.png){fig-align="center"}
-
-**EXERCICE 3**
