@@ -16,8 +16,9 @@
 
 ## Liens
 
--   <https://www.r-graph-gallery.com/>
+-   Des exemples de graphiques inspirants (à mettre en favoris) <https://www.r-graph-gallery.com/>
 
--   Le package *{esquisse}* pour construire une ébauche de graphique et générer le code
+-   Le livre de recette de ggplot2 (UN MUST) <https://r-graphics.org/>
 
-![](img/clipboard-sauvegarde2.png){fig-align="center"}
+-   Le package **{esquisse}** pour construire une ébauche de graphique et générer le code => <https://dreamrs.shinyapps.io/esquisse/>
+
