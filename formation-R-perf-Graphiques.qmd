@@ -107,3 +107,5 @@ RStudio Workbench.
 {{< include 12_habillage-graphique.qmd >}}
 
 {{< include 13_sauvegarde.qmd >}}
+
+{{< include 14_exercice.qmd >}}

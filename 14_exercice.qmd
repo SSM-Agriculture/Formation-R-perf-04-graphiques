@@ -1,0 +1,17 @@
+# Exercices
+
+## Exercice 1
+::: {.callout-tip icon=false}
+## Exercice 1
+
+À partir des données de la base prenoms :
+
+- Tracer la courbe de l’évolution du nombre de naissances de Camille depuis 2000. Choisir une largeur de ligne de 1 et colorer la courbe en orange. 
+**Attention, la variable correspondant à l’année de naissance doit être numérique.**
+
+*Indication : agréger d’abord les données pour l’ensemble des départements pour obtenir le nombre total d’enfants prénommés «Camille» pour chaque année depuis 2000.*
+
+- Tracer la courbe de l'évolution du nombre de naissances de « Camille » selon le sexe de l’enfant.
+
+- Pour aller plus loin : ajouter au graphique la courbe représentant le total (F+G) et mettre en pointillés les deux autres courbes.
+:::
