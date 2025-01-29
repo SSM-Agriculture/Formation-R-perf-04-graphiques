@@ -31,6 +31,24 @@ Le paramètre stat précise qu’il faut utiliser la valeur de la variable y pou
 
 ## Les diagrammes en barres
 
+Pour rendre le graphique plus facile à lire, il est utile de :  
+
+- **Réorganiser le graphique**  
+En réordonnant les différentes modalités dans le jeu de données pour qu’elles soient classées par ordre décroissant  
+
+*⇒ fonction reorder() pour réordonner les modalités d’une variable selon les effectifs d’une autre variable*  
+
+- Intervertir l’axe des x et des y 
+
+    - en modifiant les variables passées en x et en y dans la fonction aes()
+    - ou en utilisant la fonction coord_flip() qui permet d’échanger l’axe horizontal et l’axe vertical **sur n'importe quel graphique créé avec ggplot2**
+
+## Les diagrammes en barres
+
+![](img/clipboard-reorder.png){fig-align="center"}
+
+## Les diagrammes en barres
+
 On peut croiser les données avec une seconde variable en renseignant l'argument *fill* dans la fonction *aes()*.
 
 Trois dispositions sont alors possibles pour ces données, à choisir dans l'argument *position* de la fonction *geom_bar(*) :
