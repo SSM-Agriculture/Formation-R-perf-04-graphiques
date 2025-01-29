@@ -20,5 +20,7 @@
 
 -   Le livre de recette de ggplot2 (UN MUST) <https://r-graphics.org/>
 
+-   Un flipbook pour bien comprendre la superposition des éléments d'un graphique. Par exemple <https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#1>
+
 -   Le package **{esquisse}** pour construire une ébauche de graphique et générer le code => <https://dreamrs.shinyapps.io/esquisse/>
 
