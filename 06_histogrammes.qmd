@@ -2,9 +2,13 @@
 
 ## Les histogrammes
 
-Les histogrammes avec **geom_histogram()** :
+<br>
+
+Les histogrammes avec `geom_histogram()` :
 
 **Objectif** : représenter la distribution d'une variable quantitative continue
+
+<br>
 
 La fonction *geom_histogram()* possède deux arguments pour gérer la largeur des barres :
 
@@ -20,6 +24,8 @@ La fonction *geom_histogram()* possède deux arguments pour gérer la largeur de
 
 On peut croiser les données avec une variable qualitative en renseignant l'argument *fill* dans la fonction *aes()*.
 
+<br>
+
 ![](img/clipboard-histo2.png){fig-align="center"}
 
 ## Les histogrammes
@@ -27,5 +33,3 @@ On peut croiser les données avec une variable qualitative en renseignant l'argu
 La fonction *geom_freqpoly()* permet de construire un polygone de fréquence pour chaque classe de la variable de croisement
 
 ![](img/clipboard-histo3.png){fig-align="center"}
-
-**EXERCICE 2**
