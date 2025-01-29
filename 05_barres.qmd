@@ -49,22 +49,19 @@ En réordonnant les différentes modalités dans le jeu de données pour qu’el
 
 ## Les diagrammes en barres
 
-On peut croiser les données avec une seconde variable en renseignant l'argument *fill* dans la fonction *aes()*.
+<br>
+
+On peut croiser les données avec une seconde variable en renseignant l'argument *fill* dans la fonction `aes()`.
 
 Trois dispositions sont alors possibles pour ces données, à choisir dans l'argument *position* de la fonction *geom_bar(*) :
 
 -   *position = "stack"* : par défaut, empilées en nombre
 
-![](img/clipboard-barre5.png){fig-align="center"}
-
-## Les diagrammes en barres
-
 -   *position = "dodge"* : placées côte à côte en nombre
-
-![](img/clipboard-barre5.png){fig-align="center"}
 
 -   *position = "fill"* : empilées en fréquence (total de chaque barre=1)
 
-![](img/clipboard-barre6.png){fig-align="center"}
 
-**EXERCICE 1**
+## Les diagrammes en barres
+
+![](img/clipboard-position.png){fig-align="center"}
