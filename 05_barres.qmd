@@ -2,7 +2,7 @@
 
 ## Les diagrammes en barres
 
-Les diagrammes en barres avec geom_bar() :
+Les diagrammes en barres avec `geom_bar()` :
 
 -   **Objectif** : compter les occurrences d'une modalité d'une variable qualitative (ou rendue qualitative par la création de classes)
 
@@ -18,9 +18,16 @@ On peut construire un diagramme en barres à partir :
 
 ## Les diagrammes en barres
 
--   De données agrégées : argument *stat = "identity"* de la fonction **geom_bar()**. Cet argument précise que la hauteur des barres n'est pas obtenue par comptage mais qu'elle est identique à la variable renseignée dans l'argument y de la fonction *aes()*
+<br>
+
+-   De données agrégées : argument *stat = "identity"* de la fonction **geom_bar()**.  
+
+Cet argument précise que la hauteur des barres n'est pas obtenue par comptage mais qu'elle est identique à la variable renseignée dans l'argument y de la fonction *aes()*
 
 ![](img/clipboard-barre3.png){fig-align="center"}
+Le paramètre stat précise qu’il faut utiliser la valeur de la variable y pour calculer la hauteur des barres.
+
+*Remarque : `geom_col()` est un raccourci pour utiliser `geom_bar()` avec `stat = identity`.
 
 ## Les diagrammes en barres
 
