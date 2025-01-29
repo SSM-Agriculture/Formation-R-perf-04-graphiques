@@ -24,5 +24,7 @@
 
 -   Un flipbook pour bien comprendre la superposition des éléments d'un graphique. Par exemple <https://evamaerey.github.io/ggplot_flipbook/ggplot_flipbook_xaringan.html#1>
 
+-   Une liste des différentes extensions de ggplot2 <https://exts.ggplot2.tidyverse.org/gallery/>
+
 -   Le package **{esquisse}** pour construire une ébauche de graphique et générer le code => <https://dreamrs.shinyapps.io/esquisse/>
 
