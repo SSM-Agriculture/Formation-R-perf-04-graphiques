@@ -10,7 +10,7 @@ editor:
 
 On peut **distinguer les observations appartenant à des classes
 différentes** au sein d'une distribution. Pour cela, il faut renseigner,
-selon le cas, les arguments suivants dans la fonction *aes()* :
+selon le cas, les arguments suivants dans la fonction `aes()` :
 
 -   **fill** : pour une différenciation par remplissage
 
@@ -29,3 +29,20 @@ selon le cas, les arguments suivants dans la fonction *aes()* :
 ## Croisement avec une autre variable
 
 ![](img/clipboard-croisement1.png){fig-align="center"}
+
+## Quand utiliser aes() ? (1/2)
+
+<br>
+
+**La fonction `aes()` fait le lien entre les données et le rendu visuel du graphique.**  
+
+Pour modifier un attribut, on utilise les mêmes noms de paramètres, mais on peut les placer **à l’intérieur** ou **à l’extérieur** de la fonction aes() selon l’effet souhaité :  
+
+- Pour modifier un attribut sans le relier aux valeurs d’une variable dans le jeu de données → on le définit dans la fonction de géométrie, **à l’extérieur de la fonction aes()** : cela s’appliquera alors à l’ensemble du graphique.  
+
+- Pour faire varier un attribut en fonction des valeurs prises par une autre variable → on le définit **à l’intérieur de la fonction aes()**
+
+
+## Quand utiliser aes() ? (2/2)
+
+![](img/clipboard-croisement2.png){fig-align="center"}
