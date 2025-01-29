@@ -16,6 +16,8 @@
 
 ## Liens
 
+<br>
+
 -   Des exemples de graphiques inspirants (à mettre en favoris) <https://www.r-graph-gallery.com/>
 
 -   Le livre de recette de ggplot2 (UN MUST) <https://r-graphics.org/>
