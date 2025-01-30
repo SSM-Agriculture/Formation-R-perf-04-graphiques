@@ -15,3 +15,7 @@
 
 - Pour aller plus loin : ajouter au graphique la courbe représentant le total (F+G) et mettre en pointillés les deux autres courbes.
 :::
+
+## Résultat attendu - exercice 1
+
+![](img/clipboard-exercice1.png)
