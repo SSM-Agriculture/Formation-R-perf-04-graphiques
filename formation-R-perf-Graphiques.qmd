@@ -46,7 +46,7 @@ visuel des formations dispensées au
 [MASA](https://agreste.agriculture.gouv.fr/).
 
 Ces formations s'adressent à des agents qui ont suivi **la formation R
-initialisation**.\
+initiation**.\
 
 ## Avant-propos
 
