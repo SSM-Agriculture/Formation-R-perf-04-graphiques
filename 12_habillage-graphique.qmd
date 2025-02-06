@@ -89,3 +89,14 @@ On peut modifier l'ensemble des libellés avec la fonction **labs()**
 ![](img/clipboard-habillage5.png){fig-align="center"}
 :::
 :::
+
+
+## Zoom sur un graphique
+
+Attention à l'argument **limits** de la fonction `scale_x_continuous()` qui enlève les données hors de l'intervalle.  
+Selon que celui-ci est ouvert ou fermé, ggplot2 peut supprimer des barres.  
+
+=> Pour zoomer sur un graphique, la bonne pratique est d'utiliser la fonction `coord_cartesian()` et son argument **xlim**.
+
+
+![](img/clipboard-histo_coord_cartesian.png){fig-align="center"}
