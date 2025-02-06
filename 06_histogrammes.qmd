@@ -28,6 +28,15 @@ On peut croiser les données avec une variable qualitative en renseignant l'argu
 
 ![](img/clipboard-histo2.png){fig-align="center"}
 
+
+## Les histogrammes
+
+Les arguments *boundary* et *closed* de la fonction *geom_histogram()* peuvent être utiles dans certains cas d'usage.
+
+<br>
+
+![](img/clipboard_histo_arguments.png){fig-align="center"}
+
 ## Les histogrammes
 
 La fonction *geom_freqpoly()* permet de construire un polygone de fréquence pour chaque classe de la variable de croisement
