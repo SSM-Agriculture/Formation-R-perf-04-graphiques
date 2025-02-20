@@ -1,3 +1,7 @@
+<!-- badges: start -->
+[![render](https://github.com/SSM-Agriculture/formation-R-perf-04-graphiques/actions/workflows/publish.yaml/badge.svg)](https://github.com/SSM-Agriculture/formation-R-perf-04-graphiques/actions)
+<!-- badges: end -->
+
 # Formation R perfectionnement - Module 4 sur les graphiques avec {ggplot2}
 
 Support de présentation pour la formation dispensée au [MASA](https://agriculture.gouv.fr/).
