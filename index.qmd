@@ -25,10 +25,12 @@ editor:
     wrap: 72
 ---
 
+# Avant-propos{.unnumbered}
+
 ## Sommaire
 
 |                                              |                              |
-|-------------------------------------------|-----------------------------|
+|----------------------------------------------|------------------------------|
 | 1 - Le package ggplot2                       | 8 - Les courbes              |
 | 2 - Initialisation d'un graphique            | 9 - Les camemberts           |
 | 3 - Les différentes géométries de graphiques | 10 - Les boîtes à moustaches |
@@ -37,49 +39,35 @@ editor:
 | 6 - Les histogrammes                         | 13 - Sauvegarde du graphique |
 | 7 - Les nuages de points                     | 14 - Liens                   |
 
-## Avant-propos
-
-<br>
-
-Ce diaporama de formation a été rédigé dans le but d'être le support
-visuel des formations dispensées au
-[SSM Agriculture](https://agreste.agriculture.gouv.fr/).
-
-Ces formations s'adressent à des agents qui ont suivi **la formation R
-initiation**.\
 
 ## Avant-propos
 
-Elles sont données en présentiel sur une durée **de trois journée**, les
-modules de cette formation sont ajustables suivants le choix des agents.
+Ce diaporama de formation a été rédigé dans le but d'être le support visuel des formations dispensées au [SSM Agriculture](https://agreste.agriculture.gouv.fr/).
+
+Ces formations _de perfectionnement_ s'adressent aux agents qui ont suivi **la formation R
+initialisation** (ou le **module de rappels sur la formation initiation**) ainsi que le **module sur les fonctions**, voir sur le [site des formations dispensées au MASA](https://ssm-agriculture.github.io/site-formations-R/).
+
+## Avant-propos
+
+Les différents modules sont donnés en présentiel sur une durée **d'une journée** (avant la formation _R-perfectionnement_ était groupée sur 3 jours).
 
 ::: callout-note
 ## Champ couvert par cette formation
 
-**Ce support couvre les rappels et complèments sur R et l'environnement
-du Minsitère.**
+**Ce support couvre le module Création de graphiques avec ggplot2 dans l'environnement R du Ministère.**
 
-Pour information, Les Modules de la formation R-perfectionnement sont:
+Pour information, Les Modules de la formation R-perfectionnement sont :
 
 -   01 - Module Rappels
-
 -   02 - Module Fonctions
-
 -   03 - Module Cartes statiques et interactives
-
 -   04 - Module Création de graphiques avec ggplot2
-
 -   05 - Module Quarto
-
 -   06 - Module Parquet
-
 -   07 - Module Initiation à l'écriture d'applications Shiny
 
-Ils sont orientés pour être utiles aux agents du SSM SSM Agriculture et se
-concentrent sur une utilisation de R via
-[RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à
-disposition des agents sur la plateforme interne Cerise basée sur
-RStudio Workbench.
+Les modules sont orientés pour être utiles aux agents du SSM Agriculture et se concentrent sur une utilisation de R via [RStudio](https://posit.co/download/rstudio-desktop/) qui est mise à
+disposition des agents sur la plateforme interne Cerise basée sur RStudio Workbench.
 :::
 
 {{< include 01_ggplot2.qmd >}}
