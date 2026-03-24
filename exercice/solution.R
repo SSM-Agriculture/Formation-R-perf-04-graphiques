@@ -17,6 +17,7 @@ library(ggthemes)
 library(ggrepel)
 library(patchwork)
 library(cols4all)
+library(magick)
 
 # Données ---------------------------------------------------------------------
 
@@ -41,10 +42,15 @@ exo_1 <- camille_annee |>
 exo_1
 
 ggsave(
-    here("exercice", "output", "exercice_1.png"),
+    filename = here("exercice", "output", "exercice_1.png"),
+    # plot = get_last_plot(),
     plot = exo_1,
     device = ragg::agg_png()
 )
+# dev.off()
+# invisible(dev.off())
+
+image_read("agg_png-ggsave.png")
 
 # Exo 2 & 3 -------------------------------------------------------------------
 
@@ -63,7 +69,7 @@ camille_total <- prenoms |>
         camille_annee |> mutate(sexe = "Total")
     )
 
-camille_total |>
+exo_3 <- camille_total |>
     ggplot(aes(x = annais, y = nombre)) +
     geom_line(aes(color = sexe, linetype = sexe)) +
     scale_color_manual(
@@ -92,8 +98,8 @@ camille_total |>
 
 
 ggsave(
-    here("exercice", "output", "exercice_3.png"),
-    plot = get_last_plot(),
+    filename = here("exercice", "output", "exercice_3.png"),
+    plot = exo_3,
     device = ragg::agg_png()
 )
 
@@ -104,9 +110,11 @@ ggsave(
 # https://clauswilke.com/dataviz/color-pitfalls.html#fig:palette-Okabe-Ito
 
 okabe <- c4a("misc.okabe", n = 3)
+# "#E69F00" "#56B4E9" "#009E73"
 colorspace::specplot(okabe)
 
-camille_total |>
+exo_3bis <-
+    camille_total |>
     ggplot(aes(x = annais, y = nombre)) +
     geom_line(aes(color = sexe, linetype = sexe), show.legend = FALSE) +
     geom_point(
@@ -151,23 +159,22 @@ camille_total |>
     )
 
 ggsave(
-    here("exercice", "output", "exercice_3bis.png"),
-    plot = get_last_plot(),
+    filename = here("exercice", "output", "exercice_3bis.png"),
+    plot = exo_3bis,
     device = ragg::agg_png()
 )
 
 # Exo 4 : pourcentage et patchwork --------------------------------------------
+# dev.off()
 
-p1 <- camille_total |>
+exo_4_p1 <- camille_total |>
     filter(sexe != "Total") |>
     ggplot(aes(x = annais, weight = nombre, fill = sexe)) +
-    geom_bar(position = "fill") +
+    geom_bar(position = "fill", show.legend = FALSE) +
     scale_fill_discrete_c4a_cat("misc.okabe", name = "Genre") +
     labs(
         y = "Proportion",
-        x = NULL,
-        # title = "Répartition de genre pour le prénom \"_Camille_\" depuis 2000",
-        # subtitle = "Source https://ssm-agriculture.github.io/"
+        x = NULL
     ) +
     theme(
         plot.title = element_markdown()
@@ -176,18 +183,17 @@ p1 <- camille_total |>
         base_size = 14,
         base_family = "Marianne"
     )
-p1
+exo_4_p1
 
-p2 <- camille_total |>
+
+exo_4_p2 <- camille_total |>
     filter(sexe != "Total") |>
     ggplot(aes(x = annais, weight = nombre, fill = sexe)) +
-    geom_bar() +
+    geom_bar(show.legend = FALSE) +
     scale_fill_discrete_c4a_cat("misc.okabe", name = "Genre") +
     labs(
         y = "Effectif",
-        x = NULL,
-        # title = "Répartition de genre pour le prénom \"_Camille_\" depuis 2000",
-        # subtitle = "Source https://ssm-agriculture.github.io/"
+        x = NULL
     ) +
     theme(
         plot.title = element_markdown()
@@ -196,17 +202,27 @@ p2 <- camille_total |>
         base_size = 14,
         base_family = "Marianne"
     )
-p2
+exo_4_p2
 
-(p2 + p1) +
+#  "#E69F00" "#56B4E9" "#009E73"
+
+exo_4_title <- "Proportion et effectif <i style='color:#E69F00'>Filles</i> et <i style='color:#56B4E9'>Garçons</i> pour le prénom \"_Camille_\" depuis 2000"
+
+exo_4 <- (exo_4_p2 + exo_4_p1) +
     plot_annotation(
-        title = "Répartition et effectif par genre pour le prénom \"_Camille_\" depuis 2000",
+        title = exo_4_title,
         theme = theme(
             legend.position = "bottom",
             plot.title = element_markdown()
         )
-    ) +
-    plot_layout(guides = "collect")
+    )
+# plot_layout(guides = "collect")
+# plot_layout(guides = "auto")
+exo_4
 
-
-ggsave(here("exercice", "output", "exercice_4.png"), device = ragg::agg_png())
+ggsave(
+    filename = here("exercice", "output", "exercice_4.png"),
+    plot = exo_4,
+    device = ragg::agg_png()
+)
+dev.off()
