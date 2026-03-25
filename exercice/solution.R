@@ -17,7 +17,6 @@ library(ggthemes)
 library(ggrepel)
 library(patchwork)
 library(cols4all)
-library(magick)
 
 # Données ---------------------------------------------------------------------
 
@@ -28,6 +27,7 @@ library(magick)
 
 prenoms <- arrow::read_parquet(here("exercice", "data", "prenoms.parquet"))
 prenoms
+
 
 camille_annee <- prenoms |>
     filter(str_to_title(prenom) == "Camille" & annais >= 2000) |>
@@ -49,8 +49,6 @@ ggsave(
 )
 # dev.off()
 # invisible(dev.off())
-
-image_read("agg_png-ggsave.png")
 
 # Exo 2 & 3 -------------------------------------------------------------------
 
@@ -95,6 +93,7 @@ exo_3 <- camille_total |>
         subtitle = "Source https://ssm-agriculture.github.io/"
     ) +
     theme_hc(base_size = 14, base_family = "Marianne")
+exo_3
 
 
 ggsave(
@@ -102,6 +101,26 @@ ggsave(
     plot = exo_3,
     device = ragg::agg_png()
 )
+
+# Reprise avec fusion / split de légende
+
+camille_total |>
+    mutate(agregat = sexe == "Total") |>
+    mutate(label = paste0(sexe, agregat)) |>
+    ggplot(aes(x = annais, y = nombre, color = sexe, linetype = agregat)) +
+    geom_line() +
+    scale_color_manual(
+        name = "Sexe",
+        values = c(
+            "Filles" = "green",
+            "Garçons" = "purple",
+            "Total" = "orange"
+        ),
+    ) +
+    scale_linetype_manual(
+        name = "Sexe", # même "name" que color fusionne les légendes
+        values = c("dashed", "solid", "solid")
+    )
 
 # Exo 3' : accessibilité (Okabe), markdown et label ---------------------------
 
@@ -157,7 +176,7 @@ exo_3bis <-
         base_size = 14,
         base_family = "Marianne"
     )
-
+exo_3bis
 ggsave(
     filename = here("exercice", "output", "exercice_3bis.png"),
     plot = exo_3bis,
@@ -172,6 +191,7 @@ exo_4_p1 <- camille_total |>
     ggplot(aes(x = annais, weight = nombre, fill = sexe)) +
     geom_bar(position = "fill", show.legend = FALSE) +
     scale_fill_discrete_c4a_cat("misc.okabe", name = "Genre") +
+    scale_y_continuous(labels = scales::percent) +
     labs(
         y = "Proportion",
         x = NULL
@@ -191,6 +211,9 @@ exo_4_p2 <- camille_total |>
     ggplot(aes(x = annais, weight = nombre, fill = sexe)) +
     geom_bar(show.legend = FALSE) +
     scale_fill_discrete_c4a_cat("misc.okabe", name = "Genre") +
+    scale_y_continuous(
+        labels = scales::label_number(big.mark = " ", decimal.mark = ",")
+    ) +
     labs(
         y = "Effectif",
         x = NULL
