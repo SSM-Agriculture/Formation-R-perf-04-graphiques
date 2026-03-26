@@ -19,9 +19,9 @@
 - reproductible
 - automatiser
 
-### Discussion
+### Discussions
 
-Passer cartographie en `ggplot2` pour la cohérence inter-module ?
+Passer cartographie en `ggplot2` pour la cohérence inter-module.
 
 ## Contenu
 
@@ -29,12 +29,14 @@ Passer cartographie en `ggplot2` pour la cohérence inter-module ?
 - pas assez d'insistance sur le concept de _mapping_ entre données et géométries via les _aes_, le _mapping_ (dont _scale_ définit la fonction).
 - exemples à (pré)voir dans la présentation ou en exercice
   - `coord_flip` et comparer à l'effet de l'inversion des axes x et y
-  - `geom_density`
+  - `geom_density` à introduire
   - `stat_summary` pour ajouter une moyenne sur un _boxplot_
   
 ### Gotchas
 
-- Pour la fusion de légende, on doit avoir le même _nom_ **et** les mêmes labels conceptuellement, on change le `linetype`
+- Pour la fusion de légendes, on doit avoir le même _nom_ **et** les mêmes labels
+
+## Annexe
 
 ### Grammaire
 

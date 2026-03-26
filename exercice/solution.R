@@ -43,12 +43,9 @@ exo_1
 
 ggsave(
     filename = here("exercice", "output", "exercice_1.png"),
-    # plot = get_last_plot(),
     plot = exo_1,
-    device = ragg::agg_png()
+    device = ragg::agg_png
 )
-# dev.off()
-# invisible(dev.off())
 
 # Exo 2 & 3 -------------------------------------------------------------------
 
@@ -95,14 +92,14 @@ exo_3 <- camille_total |>
     theme_hc(base_size = 14, base_family = "Marianne")
 exo_3
 
-
 ggsave(
     filename = here("exercice", "output", "exercice_3.png"),
     plot = exo_3,
-    device = ragg::agg_png()
+    device = ragg::agg_png
 )
 
-# Reprise avec fusion / split de légende
+## Reprise avec légende séparée pour les
+## Test suite à question en séance du 2026-03-25
 
 camille_total |>
     mutate(agregat = sexe == "Total") |>
@@ -122,7 +119,7 @@ camille_total |>
         values = c("dashed", "solid", "solid")
     )
 
-# Exo 3' : accessibilité (Okabe), markdown et label ---------------------------
+# Exo 3' : ajouter accessibilité (Okabe), markdown et labels ---------------------------
 
 # Palette de couleur Okabe
 # https://wilkelab.org/SDS375/slides/color-scales.html#1
@@ -177,14 +174,14 @@ exo_3bis <-
         base_family = "Marianne"
     )
 exo_3bis
+
 ggsave(
     filename = here("exercice", "output", "exercice_3bis.png"),
     plot = exo_3bis,
-    device = ragg::agg_png()
+    device = ragg::agg_png
 )
 
-# Exo 4 : pourcentage et patchwork --------------------------------------------
-# dev.off()
+# Exo 4 : nouvelles représentations en colonnes et patchwork ------------------
 
 exo_4_p1 <- camille_total |>
     filter(sexe != "Total") |>
@@ -204,7 +201,6 @@ exo_4_p1 <- camille_total |>
         base_family = "Marianne"
     )
 exo_4_p1
-
 
 exo_4_p2 <- camille_total |>
     filter(sexe != "Total") |>
@@ -229,7 +225,7 @@ exo_4_p2
 
 #  "#E69F00" "#56B4E9" "#009E73"
 
-exo_4_title <- "Proportion et effectif <i style='color:#E69F00'>Filles</i> et <i style='color:#56B4E9'>Garçons</i> pour le prénom \"_Camille_\" depuis 2000"
+exo_4_title <- "Effectifs et proportions <i style='color:#E69F00'>Filles</i> et <i style='color:#56B4E9'>Garçons</i> pour le prénom \"_Camille_\" depuis 2000"
 
 exo_4 <- (exo_4_p2 + exo_4_p1) +
     plot_annotation(
@@ -239,13 +235,73 @@ exo_4 <- (exo_4_p2 + exo_4_p1) +
             plot.title = element_markdown()
         )
     )
-# plot_layout(guides = "collect")
-# plot_layout(guides = "auto")
 exo_4
 
 ggsave(
     filename = here("exercice", "output", "exercice_4.png"),
     plot = exo_4,
-    device = ragg::agg_png()
+    device = ragg::agg_png
 )
-dev.off()
+
+# Exo 5 : facettes sur plusieurs prénoms épincènes ------------------
+
+prenoms_epicenes <- tribble(
+    ~prenom     ,
+    "Camille"   ,
+    "Dominique" ,
+    "Claude"    ,
+    "Noa"
+)
+
+exo_5_data <- prenoms |>
+    semi_join(prenoms_epicenes, by = join_by(prenom)) |>
+    filter(annais |> between(1950, 2020)) |>
+    summarise(nombre = sum(nombre), .by = c(prenom, annais, sexe)) |>
+    bind_rows(
+        prenoms |>
+            semi_join(prenoms_epicenes, by = join_by(prenom)) |>
+            filter(annais |> between(1950, 2020)) |>
+            summarise(nombre = sum(nombre), .by = c(prenom, annais)) |>
+            mutate(sexe = "T")
+    )
+
+exo_5_labels <- c("F" = "Filles", "G" = "Garçons", "T" = "Total")
+exo_5_linetypes <- c("F" = "dashed", "G" = "dashed", "T" = "solid")
+
+exo_5 <- exo_5_data |>
+    ggplot(aes(x = annais, y = nombre)) +
+    geom_line(aes(color = sexe, linetype = sexe)) +
+    scale_linetype_manual(
+        name = "Genre",
+        values = exo_5_linetypes,
+        labels = exo_5_labels
+    ) +
+    scale_color_discrete_c4a_cat(
+        palette = "misc.okabe",
+        name = "Genre",
+        labels = exo_5_labels
+    ) +
+    labs(
+        y = "Effectif",
+        x = "Année",
+        title = "Effectif par genre sur la période 1950-2000",
+        subtitle = "Source https://ssm-agriculture.github.io/"
+    ) +
+    theme(
+        strip.background = element_rect(
+            fill = NA,
+            color = NA
+        )
+    ) +
+    theme_hc(
+        base_size = 14,
+        base_family = "Marianne",
+    ) +
+    facet_wrap(~prenom, scales = "free_y")
+exo_5
+
+ggsave(
+    filename = here("exercice", "output", "exercice_5.png"),
+    plot = exo_5,
+    device = ragg::agg_png
+)
